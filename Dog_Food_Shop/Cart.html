@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chatset="UTF=8">
+    <meta name="viewpoint" content="width=device-width, initial-sclae=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Pet Food Shop</title>
+    <style>
+body{
+    background-color: antiquewhite;
+
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.wrapper h1{
+    padding: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.project{
+    display: flex;
+
+}
+.shop{
+    flex: 75%;
+
+}
+.box{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    box-shadow: rgba(100,100,111,0.2);
+}
+.unit input{
+    width: 50px;
+    padding: 8px;
+    text-align: center;
+}
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+	padding-top: 50px;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:coral;
+}
+
+li {
+  float:left;
+  margin-left: 90px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.footer {
+   position:relative;
+   margin-right: 50px;
+   margin-top: 150px;
+   padding: 20px 15%;
+   display: flex;
+   bottom: 0;
+   width: 100%;
+   background-color:bisque;
+   color: white;
+   text-align:left;
+   left:0;
+}
+.footer div{
+  text-align: center;
+}
+ol{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 80px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+
+</head>
+<body>
+    <div class="image">
+        <ul>
+            <li><a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>HOME</a></li>
+            <li><a href="AboutUs.html"><i class="fa fa-fw fa-address-card"></i>ABOUT US</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-dropbox"></i>SERVICES</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-opencart"></i>PRODUCTS</a></li>
+            <li><a href="Shop.html"><i class="fa fa-fw fa-shopping-cart"></i>SHOP</a></li>
+            
+        </ul>
+    </div>
+    <div class="wrapper">
+        <h1>Shopping Cart</h1>
+        <div class="project">
+            <div class="shop">
+                <div class="box">
+                    <img src="Images/DogTreat_Chicken.png">
+                    <div class="content">
+                        <h3>Dog Food - Chicken</h3>
+                        <h4>Price: $11.99</h4>
+                        <p class="unit">Quantity: <input value="2"></p>
+                        <p class="btn-area"></p>
+                        <i class="fa fa-fw fa-trash"></i>
+                        <span class="btn2">Remove</span>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="wrapper">
+      
+        <div class="project">
+            <div class="shop">
+                <div class="box">
+                    <img src="Images/DogTreat_Duck.png">
+                    <div class="content">
+                        <h3>Dog Food - Duck</h3>
+                        <h4>Price: $11.99</h4>
+                        <p class="unit">Quantity: <input value="1"></p>
+                        <p class="btn-area">
+                        <i class="fa fa-fw fa-trash"></i>
+                        <span class="btn2">Remove</span>
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+            
+              <div class="row">
+                <div class="col-50">
+                  <h3>Billing Address</h3>
+                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="john@example.com">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="New York">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="text" id="state" name="state" placeholder="NY">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input type="text" id="zip" name="zip" placeholder="10001">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Name of Card holder">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2018">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+              <input type="submit" value="Continue to checkout" class="btn">
+            </form>
+          </div>
+        </div>
+        <div class="col-25">
+          <div class="container">
+            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>2</b></span></h4>
+            <p><a href="#">Dog Food - Chicken</a> <span class="price"> $11.99*2 = $23.98</span></p>
+            <p><a href="#">Dog Food - lamb</a> <span class="price">$11.99</span></p>
+           
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>$35.97</b></span></p>
+          </div>
+        </div>
+      </div>
+      
+
+                
+                
+
+
+
+    </body>
+    </html>

@@ -1,0 +1,116 @@
+.bg-img{
+    background-image: url(about.jpg);
+    min-height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+    h2,h3{
+      text-align: center;
+      color:firebrick;
+      font-weight: 200;
+      font-family: 'Times New Roman', Times, serif;
+      
+      font-size: 20px;
+    }
+
+    .h1{
+        color:darkorange;
+        
+        display: block;
+        
+    }
+ 
+
+
+  a:link{
+    color: red;
+    font-weight: bolder;
+  }
+  a:hover{
+    color: blue;
+  }
+  
+   .padding {
+    padding-block: 10px;
+    margin: 0px;
+    background-color: bisque;
+  }
+  .header{
+    color:brown;
+    text-align: center;
+    font-size:small;
+  }
+    
+ 
+.container{
+  position:absolute;
+  margin: 50px;
+  top:50px;
+  left: 25%;
+
+  width:auto;
+  text-align: center;
+}
+.topnav{
+  overflow: hidden;
+  background-color:none;
+  text-align: center;
+}
+.topnav a{
+  float:center;
+  color:ghostwhite;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color:green;
+}
+.centered {
+  position:absolute;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  top: 600%;
+  left: 10%;
+  }
+  .footer {
+  background-color:darkcyan;
+  padding: 30px;
+  text-align: center;
+  left: 30px;
+  color:whitesmoke;
+  display: flex;
+  }
+  
+  
+  @media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+<link href="symentic.css"   
+        type="text/css"
+        rel="stylesheet"
+        media="screen" />

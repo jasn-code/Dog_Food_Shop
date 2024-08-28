@@ -1,0 +1,172 @@
+/* This is CSS style sheet code for ABOUT webpage
+My name is Jasmeen Arora, Date: October,10,2023 */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+	padding-top: 50px;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:coral;
+}
+
+li {
+  float:left;
+  margin-left: 90px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url(Images/about.jpg);
+
+  min-height: 600px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+ 
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0 32px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+
+/* Set a style for the submit button */
+.btn {
+  background-color:brown;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 500px){
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.content {padding:50px;
+    margin-left: 50px;
+    text-align: center;
+
+}
+h2,h3{
+      text-align: center;
+      color:firebrick;
+      font-weight: 200;
+      font-family: 'Times New Roman', Times, serif;
+      
+      font-size: 20px;
+    }
+
+    .h1{
+        color:darkorange;
+        text-align: center;
+        display: block;
+        
+    }
+ 
+    @media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+.footer {
+   position:relative;
+   left: 0;
+   margin-right: 50px;
+   margin-top: 150px;
+   padding: 20px 15%;
+   display: flex;
+   bottom: 0;
+   width: 100%;
+   background-color:bisque;
+   color: white;
+   text-align:left;
+}
+.footer div{
+  text-align: center;
+}
+ol{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 100px;
+  overflow: hidden;
+  text-align: center;
+
+
+}
+
